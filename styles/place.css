@@ -1,6 +1,6 @@
 :root {
     --primary-bg: #db003a;
-    --primary-color: #fefcfd;
+    --primary-color: #fff;
 
     --secondary-bg: #00794e;
     --secondary-bg-rgb: 0, 121, 78;
@@ -98,6 +98,8 @@ footer {
 
 footer p {
     color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -117,7 +119,7 @@ footer p {
         margin-left: -4.5rem;
         color: #fff;
         padding: .8rem;
-        position: relative;
+        min-width: 11rem;
     }
 
     main section:first-of-type {
@@ -135,8 +137,7 @@ footer p {
     main section:last-of-type h2::after {
         content: "⛅";
         font-size: 1em;
-        position: absolute;
-        right: 1rem;
+        margin-left: .2rem;
     }
 
     main .icon {
@@ -155,4 +156,16 @@ footer p {
         font-weight: 600;
     }
 
+}
+
+@media only screen and (min-width: 920px) {
+    main section:first-of-type {
+        top: 3rem;
+        left: 2rem;
+    }
+
+    main section:last-of-type {
+        bottom: 3rem;
+        right: 2rem;
+    }
 }
