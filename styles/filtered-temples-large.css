@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+    button.menu {
+        display: none;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        height: auto;
+    }
+
+    header nav:not(.open) {
+        height: auto;
+    }
+
+
+}
