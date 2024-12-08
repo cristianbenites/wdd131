@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <meta name="author" content="Cristian Benites">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Cristian Benites | A product review page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="product-name" id="product-name" required>
+                    <option disabled value="">Select a Product...</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label for="rating-1">&star;</label>
+                <input
+                    type="radio"
+                    name="rating"
+                    id="rating-1"
+                    value="1"
+                >
+
+                <label for="rating-2">&star;&star;</label>
+                <input
+                    type="radio"
+                    name="rating"
+                    id="rating-2"
+                    value="2"
+                >
+
+                <label for="rating-3">&star;&star;&star;</label>
+                <input
+                    type="radio"
+                    name="rating"
+                    id="rating-3"
+                    value="3"
+                >
+
+                <label for="rating-4">&star;&star;&star;&star;</label>
+                <input
+                    type="radio"
+                    name="rating"
+                    id="rating-4"
+                    value="4"
+                >
+
+                <label for="rating-5">&star;&star;&star;&star;&star;</label>
+                <input
+                    type="radio"
+                    name="rating"
+                    id="rating-5"
+                    value="5"
+                >
+            </fieldset>
+
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="date-installation" name="date" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Useful Features<span>(Check all that apply)</span></legend>
+
+                <label class="useful-features">
+                    <input type="checkbox" id="feat-durability" name="durability" value="durability">
+                    Durabilty
+                </label>
+                <label class="useful-features">
+                    <input type="checkbox" id="feat-ease-of-use" name="ease-of-use" value="ease-of-use">
+                    Ease of Use
+                </label>
+
+                <label class="useful-features">
+                    <input type="checkbox" id="feat-performance" name="performance" value="performance">
+                    Performance
+                </label>
+
+                <label class="useful-features">
+                    <input type="checkbox" id="feat-design" name="design" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Writeen Review<span> (optional)</span></legend>
+                <textarea name="written-review" id="written-review"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Name<span> (optional)</span></legend>
+                <input type="text" id="user-name" name="user-name">
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> - Cristian Benites - Brazil
+        </p>
+        <p class="lastModified"></p>
+    </footer>
+</body>
+
+</html>
