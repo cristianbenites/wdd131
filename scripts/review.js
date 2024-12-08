@@ -1,7 +1,7 @@
 function load() {
     const submissions = localStorage.getItem("submissions");
 
-    let count = 0;
+    let count = 1;
     console.log(submissions);
 
     if(submissions) {
@@ -9,7 +9,7 @@ function load() {
         count++;
         localStorage.setItem("submissions", count);
     } else {
-        localStorage.setItem("submissions", "0");
+        localStorage.setItem("submissions", "1");
     }
 
     document.getElementById("review-number").textContent = count;
