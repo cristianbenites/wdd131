@@ -1,0 +1,190 @@
+:root {
+    --primary-bg: #f96939;
+    --primary-fg: #fef0eb;
+
+    --background: #fef0eb;
+
+    --accent1-color : #220901;
+    --accent2-color: #594f4a;
+
+    --heading-font: 'Noto Serif', serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+td, p, figcaption, dt, dd, li {
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    border-bottom: 1px solid var(--accent1-color);
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header img {
+    max-width: 5rem;
+}
+
+header label {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+header label div,
+header label .center div {
+    width: 2rem;
+    height: 5px;
+    background-color: var(--primary-bg);
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+
+header input[type="checkbox"]:checked ~ label > div:not(.center) {
+    background-color: transparent;
+}
+
+header label .center {
+    position: relative;
+}
+
+header label .center div {
+    position: absolute;
+    width: 1rem;
+}
+
+header input[type="checkbox"]:checked ~ label {
+    transform: rotate(180deg);
+}
+
+header input[type="checkbox"]:checked ~ label .center div:first-child {
+    transform: rotate(45deg);
+    top: 100%;
+    left: -5%;
+}
+header input[type="checkbox"]:checked ~ label .center div:last-child {
+    transform: rotate(-45deg);
+    top: -100%;
+    left: -5%;
+}
+
+header nav {
+    background-color: rgba(0,0,0 , 0.9);
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: all 0.5s ease-out;
+}
+
+header nav ul {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80vw;
+    height: 100vh;
+    padding: 2rem;
+    border-top: 1px solid var(--primary-bg);
+
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease-out;
+}
+
+header nav li {
+    list-style: none;
+    margin: 0;
+}
+
+header nav a {
+    border: 0;
+    font-size: 1.2em;
+}
+
+header input[type="checkbox"]:not(:checked) ~ nav {
+    background-color: transparent;
+}
+
+header input[type="checkbox"]:not(:checked) ~ nav ul {
+    right: -200%;
+}
+
+
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+li, dd {
+    margin-left: 1rem;
+}
+
+dt:not(:first-child) {
+    margin-top: .5rem;
+}
+
+dt {
+    font-weight: 800;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+figure img {
+    max-width: 50rem;
+    min-height: 100%;
+}
+
+figcaption {
+    color: var(--accent1-color);
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
