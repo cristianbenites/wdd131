@@ -8,105 +8,86 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+        <meta name="author" content="Cristian Benites">
+        <meta name="description" content="Loopy Cookies for all tastes | Cristian Benites | index page">
+
+        <script src="scripts/loopy.js" defer></script>
+
     </head>
     <body>
         <header>
-            <img src="images/logo.svg" alt="Loopy Cookies Logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Loopy Cookies Logo">
+            </a>
 
             <input type="checkbox" id="menu">
             <label for="menu">
-                <div></div>
-                <div class="center">
-                    <div></div>
-                    <div></div>
-                </div>
-                <div></div>
+                <span></span>
+                <span class="center">
+                    <span></span>
+                    <span></span>
+                </span>
+                <span></span>
             </label>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <div class="hero">
+                <img src="images/loopy_banner.webp" alt="Cookies Image" width="850" height="300">
+                <div class="cta">
+                    <h2>The Best New York Style Cookies</h2>
+                    <p>
+                        Find the best flavors for all different kinds of tastes.
+                        Contact us at any time to learn more!
+                    </p>
+                    <a href="catalog.html" class="btn">SEE CATALOG</a>
+                </div>
+            </div>
 
-            <section>
-                <h2>Site Name</h2>
-                <h3>Loopy Confeitaria</h3>
-                <p>
-                    This is the name of a confectionary focused on cookies
-                    production. The name is to play on the idea of being a
-                    creative and dynamic company.
-                </p>
+            <section class="sec-1">
+                <h2>As You Want... As You Need</h2>
+
+                <div class="icon-card">
+                    <img src="images/cookie_icon.svg" alt="Icon of a cookie">
+                    <h3>Classic & Stuffed Cookie Delight</h3>
+                    <p>
+                        Indulge in our delectable range of cookies, from traditional classics to irresistibly stuffed creations.
+                    </p>
+                </div>
+
+                <div class="icon-card">
+                    <img class="deliver-icon" src="images/delivery_icon.svg" alt="Icon of delivery">
+                    <h3>Delivery to Your Doorstep</h3>
+                    <p>
+                        Enjoy your favorite cookies, fresh and warm, delivered right to your doorstep.
+                    </p>
+                </div>
+
+                <div class="icon-card">
+                    <img src="images/price_icon.svg" alt="Icon representing cheap price">
+                    <h3>Amazing Cookies at Great Prices</h3>
+                    <p>
+                        At our store, you get the best of both worlds—delicious cookies and pocket-friendly prices.
+                    </p>
+                </div>
             </section>
 
-            <section>
-                <h2>Site Purpose</h2>
-                <p>
-                    Offer an online catalog where customers can view all cookie
-                    flavors, with photos and descriptions, having the possibility
-                    of selecting the ones they want and forwarding them to
-                    WhatsApp, where they can complete the ordering process.
-                </p>
+            <section class="sec-2">
+                <h2>Our Featured Products</h2>
             </section>
-
-            <section>
-                <h2>Scenarios</h2>
-                <ul>
-                    <li>What cookie flavors are present in the catalog?</li>
-                    <li>Can I see pictures of the cookies?</li>
-                    <li>What is the company's contact information?</li>
-                    <li>How can I place orders?</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Color Schema</h2>
-
-                <dl>
-                    <dt>Primary (bg and fg)</dt>
-                    <dd>#f96939</dd>
-                    <dd>#fef0eb</dd>
-
-                    <dt>Background</dt>
-                    <dd>#fef0eb</dd>
-
-                    <dt>Paragraphs</dt>
-                    <dd>#594f4a</dd>
-
-                    <dt>Headings</dt>
-                    <dd>#220901</dd>
-
-                </dl>
-            </section>
-
-            <section>
-                <h2>Fonts</h2>
-                <dl>
-                    <dt>For Headings and Buttons</dt>
-                    <dd>Noto Serif</dd>
-
-                    <dt>For paragraphs and links</dt>
-                    <dd>Open Sans</dd>
-                </dl>
-            </section>
-
-            <section>
-                <h2>Wireframe</h2>
-
-                <figure>
-                    <figcaption>Web version wireframe</figcaption>
-                    <img src="images/loopy-web.webp" alt="Loopy Cookies Website Wireframe Web Version">
-                </figure>
-                <figure>
-                    <figcaption>Mobile version wireframe</figcaption>
-                    <img src="images/loopy-mobile.webp" alt="Loopy Cookies Website Wireframe Mobile Version">
-                </figure>
-
-            </section>
-
         </main>
+
+        <footer>
+            <p>
+                &copy;<span id="currentyear"></span> 🏐 Cristian Benites 🍪 Brazil
+            </p>
+            <p class="lastModified"></p>
+        </footer>
     </body>
 </html>
