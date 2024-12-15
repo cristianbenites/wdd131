@@ -479,6 +479,7 @@ footer span {
         max-width: 800px;
     }
 
+    .cart,
     .about {
         max-width: 1300px;
         margin: 0 auto;
@@ -489,11 +490,6 @@ footer span {
 @media only screen and (min-width: 1350px) {
     header {
         max-width: 1300px;
-    }
-
-    main {
-        max-width: 1300px;
-        margin: 0 auto;
     }
 
     .about {
